@@ -1,0 +1,204 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+line-height:1.7;
+background:#f8f8f8;
+color:#333;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+background:#8b0000;
+color:white;
+padding:15px 0;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo-area img{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+
+.logo-area h2{
+font-size:24px;
+}
+
+.logo-area p{
+font-size:13px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+background:linear-gradient(
+rgba(0,0,0,.6),
+rgba(0,0,0,.6)
+),
+url('donation.jpg');
+background-size:cover;
+background-position:center;
+height:85vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+background:#ffcc00;
+color:black;
+padding:15px 30px;
+margin-top:25px;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+.about{
+padding:80px 0;
+background:white;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+color:#8b0000;
+}
+
+.mission{
+padding:80px 0;
+background:#f2f2f2;
+}
+
+.mission .container{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+width:320px;
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+color:#8b0000;
+margin-bottom:15px;
+}
+
+.donation{
+padding:80px 0;
+background:white;
+text-align:center;
+}
+
+.donation h2{
+color:#8b0000;
+font-size:40px;
+margin-bottom:20px;
+}
+
+.donation-img{
+width:100%;
+max-width:1000px;
+border-radius:10px;
+margin-top:20px;
+}
+
+.donation-box{
+margin-top:30px;
+padding:25px;
+background:#f4f4f4;
+border-radius:10px;
+}
+
+.contact{
+padding:80px 0;
+text-align:center;
+background:#f8f8f8;
+}
+
+.contact h2{
+font-size:40px;
+color:#8b0000;
+margin-bottom:20px;
+}
+
+footer{
+background:#8b0000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.nav{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.card{
+width:100%;
+}
+
+}
