@@ -253,29 +253,59 @@ margin-bottom:15px;
 font-size:24px;
 }
 
+/* =====================
+GALLERY SLIDER
+===================== */
+
 .gallery-section{
 padding:100px 0;
 background:#fafafa;
+overflow:hidden;
 }
 
-.gallery-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
-}
-
-.gallery-grid img{
+.slider{
 width:100%;
-height:260px;
+overflow:hidden;
+position:relative;
+margin-top:40px;
+}
+
+.slide-track{
+display:flex;
+gap:20px;
+width:max-content;
+animation:scroll 35s linear infinite;
+}
+
+.slide-track img{
+width:320px;
+height:220px;
 object-fit:cover;
 border-radius:15px;
-transition:.4s;
-box-shadow:0 5px 20px rgba(0,0,0,.1);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+flex-shrink:0;
+transition:.3s;
 }
 
-.gallery-grid img:hover{
+.slide-track img:hover{
 transform:scale(1.05);
 }
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* =====================
+BANNER
+===================== */
 
 .banner-section{
 padding:50px 0 100px;
@@ -287,6 +317,10 @@ width:100%;
 border-radius:20px;
 box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
+
+/* =====================
+DONATION
+===================== */
 
 .donation-section{
 padding:100px 0;
@@ -324,6 +358,10 @@ margin-bottom:15px;
 font-size:18px;
 }
 
+/* =====================
+CONTACT
+===================== */
+
 .contact-section{
 padding:100px 0;
 background:white;
@@ -348,6 +386,10 @@ color:#7a0000;
 margin-bottom:15px;
 }
 
+/* =====================
+FOOTER
+===================== */
+
 footer{
 background:#4d0000;
 color:white;
@@ -361,6 +403,10 @@ height:90px;
 border-radius:50%;
 margin-bottom:15px;
 }
+
+/* =====================
+WHATSAPP
+===================== */
 
 .whatsapp-btn{
 position:fixed;
@@ -376,9 +422,9 @@ box-shadow:0 5px 15px rgba(0,0,0,.3);
 z-index:9999;
 }
 
-.whatsapp-btn:hover{
-transform:scale(1.05);
-}
+/* =====================
+MOBILE
+===================== */
 
 @media(max-width:768px){
 
@@ -421,6 +467,11 @@ font-size:32px;
 font-size:18px;
 }
 
+.slide-track img{
+width:250px;
+height:180px;
+}
+
 }
 
 @media(max-width:480px){
@@ -436,6 +487,11 @@ font-size:34px;
 .logo-area{
 flex-direction:column;
 text-align:center;
+}
+
+.slide-track img{
+width:220px;
+height:160px;
 }
 
 }
