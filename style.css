@@ -278,8 +278,8 @@ animation:scroll 35s linear infinite;
 }
 
 .slide-track img{
-width:320px;
-height:220px;
+width:420px;
+height:320px;
 object-fit:cover;
 border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,.15);
